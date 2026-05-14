@@ -88,7 +88,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-lg">Email Us</h4>
-                    <p className="text-brand-cloud/70">contact@realestate.com</p>
+                    <p className="text-brand-cloud/70">contact@avsrealestate.com</p>
                   </div>
                 </div>
               </div>
@@ -97,28 +97,30 @@ export function ContactSection() {
             {/* Right side: Form */}
             <div className="p-10">
               <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Full Name *</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-brand-forest focus:border-transparent outline-none transition-all"
-                    placeholder="John Doe"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email Address *</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-brand-forest focus:border-transparent outline-none transition-all"
-                    placeholder="john@example.com"
-                  />
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  <div>
+                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Full Name *</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-brand-forest focus:border-transparent outline-none transition-all"
+                      placeholder="John Doe"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email Address *</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-brand-forest focus:border-transparent outline-none transition-all"
+                      placeholder="john@example.com"
+                    />
+                  </div>
                 </div>
 
                 <div>
@@ -161,7 +163,7 @@ export function ContactSection() {
                 <Button 
                   type="submit" 
                   disabled={isSubmitting || submitStatus === 'success'}
-                  className="w-full bg-brand-forest text-white hover:bg-brand-forest/90 py-6 text-lg rounded-xl transition-all disabled:opacity-70 flex items-center justify-center"
+                  className="w-full bg-brand-forest text-white hover:bg-brand-forest/90 py-4 text-lg rounded-xl transition-all disabled:opacity-70 flex items-center justify-center h-auto"
                 >
                   {isSubmitting ? (
                     <>

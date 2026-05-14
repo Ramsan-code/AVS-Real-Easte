@@ -7,7 +7,7 @@ export function Footer() {
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           <div>
-            <h3 className="text-2xl font-bold text-brand-lime mb-6">RealEstate</h3>
+            <h3 className="text-2xl font-bold text-brand-lime mb-6">AVS RealEstate</h3>
             <p className="text-brand-cloud/70 leading-relaxed max-w-sm">
               Your trusted partner in finding premium housing, prime shop buildings, and lucrative development places.
             </p>
@@ -32,13 +32,13 @@ export function Footer() {
             <address className="not-italic text-brand-cloud/70 space-y-3">
               <p>123 Real Estate Blvd, Suite 400</p>
               <p>Metropolis, NY 10001</p>
-              <p>contact@realestate.com</p>
+              <p>contact@avsrealestate.com</p>
               <p>+1 (555) 123-4567</p>
             </address>
           </div>
         </div>
         <div className="border-t border-brand-cloud/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-brand-cloud/50">
-          <p>&copy; {new Date().getFullYear()} RealEstate Agency. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} AVS RealEstate Agency. All rights reserved.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <Link href="#" className="hover:text-brand-lime transition-colors">Privacy Policy</Link>
             <Link href="#" className="hover:text-brand-lime transition-colors">Terms of Service</Link>

@@ -36,7 +36,7 @@ export function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className={`text-2xl font-bold tracking-tighter ${scrolled ? 'text-brand-forest' : 'text-white drop-shadow-md'}`}>
-            RealEstate<span className="text-brand-lime">.</span>
+            AVS RealEstate<span className="text-brand-lime">.</span>
           </Link>
 
           {/* Desktop Menu */}
