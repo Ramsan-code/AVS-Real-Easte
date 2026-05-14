@@ -1,4 +1,4 @@
-export type Category = 'All' | 'Places' | 'Shop Buildings' | 'Housing';
+export type Category = 'All' | 'Shop Buildings' | 'Housing';
 
 export interface Property {
   id: string;
