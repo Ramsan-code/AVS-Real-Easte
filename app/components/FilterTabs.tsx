@@ -17,7 +17,7 @@ export function FilterTabs({ activeCategory, onCategoryChange }: FilterTabsProps
         onValueChange={(value) => onCategoryChange(value as Category)}
         className="w-full max-w-2xl"
       >
-        <TabsList className="grid w-full grid-cols-4 bg-brand-cloud p-1 rounded-xl shadow-sm h-14">
+        <TabsList className="grid w-full grid-cols-3 bg-brand-cloud p-1 rounded-xl shadow-sm h-14">
           {CATEGORIES.map((category) => (
             <TabsTrigger 
               key={category} 
