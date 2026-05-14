@@ -25,4 +25,9 @@ export const properties: Property[] = [
   { id: 's9', name: 'Art Gallery Space', price: 900000, category: 'Shop Buildings', image: 'https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=800&q=80', description: 'Open-concept art gallery with custom lighting and pristine white walls.', location: 'Santa Fe, NM', squareFeet: 2500 },
   { id: 's10', name: 'Pop-Up Shop Location', price: 250000, category: 'Shop Buildings', image: 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=800&q=80', description: 'A small, flexible space ideal for rotating pop-up shops.', location: 'Brooklyn, NY', squareFeet: 800 },
 
+  // Land
+  { id: 'l1', name: 'Prime Commercial Acreage', price: 1200000, category: 'Land', image: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80', description: '5 acres of prime commercial land ready for development.', location: 'Houston, TX', squareFeet: 217800 },
+  { id: 'l2', name: 'Scenic Mountain Plot', price: 450000, category: 'Land', image: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80', description: 'Beautiful mountain plot with stunning panoramic views.', location: 'Boulder, CO', squareFeet: 43560 },
+  { id: 'l3', name: 'Lakeside Development Parcel', price: 850000, category: 'Land', image: 'https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=800&q=80', description: 'Perfect parcel for a lakeside luxury home or small resort.', location: 'Lake George, NY', squareFeet: 87120 },
+  { id: 'l4', name: 'Agricultural Farmland', price: 600000, category: 'Land', image: 'https://images.unsplash.com/photo-1500076656116-558758c991c1?auto=format&fit=crop&w=800&q=80', description: 'Fertile farmland suitable for a variety of crops.', location: 'Fresno, CA', squareFeet: 435600 },
 ];
