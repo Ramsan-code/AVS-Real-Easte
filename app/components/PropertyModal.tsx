@@ -18,7 +18,7 @@ export function PropertyModal({ property, isOpen, onClose }: PropertyModalProps)
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-4xl p-0 overflow-hidden bg-brand-cloud border-none">
+      <DialogContent className="w-[95vw] sm:max-w-4xl md:max-w-5xl p-0 overflow-hidden bg-brand-cloud border-none">
         <VisuallyHidden>
           <DialogTitle>{property.name} Details</DialogTitle>
         </VisuallyHidden>
