@@ -92,7 +92,12 @@ export function PropertyModal({ property, isOpen, onClose }: PropertyModalProps)
 
             <Button 
               className="w-full bg-brand-forest text-white hover:bg-brand-forest/90 py-6 text-lg rounded-xl mt-auto"
-              onClick={() => alert('Contact agent form would open here.')}
+              onClick={() => {
+                onClose();
+                setTimeout(() => {
+                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                }, 100);
+              }}
             >
               Contact Agent
             </Button>

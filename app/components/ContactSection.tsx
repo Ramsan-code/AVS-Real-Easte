@@ -55,7 +55,7 @@ export function ContactSection() {
 
   return (
     <section className="py-24 bg-brand-cloud" id="contact">
-      <div className="container mx-auto px-4 max-w-4xl">
+      <div className="container mx-auto px-4 max-w-7xl">
         <motion.div
           ref={ref}
           initial="hidden"
@@ -88,7 +88,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-lg">Email Us</h4>
-                    <p className="text-brand-cloud/70">contact@avsrealestate.com</p>
+                    <p className="text-brand-cloud/70 break-all">contact@avsrealestate.com</p>
                   </div>
                 </div>
               </div>

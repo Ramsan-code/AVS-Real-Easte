@@ -47,7 +47,7 @@ export function About() {
             <p className="text-lg text-gray-600 leading-relaxed">
               Whether you are seeking a lucrative commercial investment, a prime piece of land, or your dream family home, our dedicated team of experts provides a bespoke approach tailored precisely to your unique aspirations.
             </p>
-            <div className="pt-6 flex gap-8">
+            <div className="pt-6 flex flex-wrap gap-4 sm:gap-6 lg:gap-8">
               <div>
                 <p className="text-4xl font-bold text-brand-forest mb-1">10+</p>
                 <p className="text-sm text-gray-500 uppercase tracking-wider font-semibold">Years Exp.</p>

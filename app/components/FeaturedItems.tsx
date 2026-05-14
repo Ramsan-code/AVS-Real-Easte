@@ -1,13 +1,17 @@
 "use client";
 
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import { fadeIn, staggerContainer } from '../utils/animations';
 import { properties } from '../utils/propertyData';
 import { PropertyCard } from './PropertyCard';
+import { PropertyModal } from './PropertyModal';
+import { Property } from '../types';
 
 export function FeaturedItems() {
   const { ref, controls } = useScrollAnimation();
+  const [selectedProperty, setSelectedProperty] = useState<Property | null>(null);
   
   // Select a few featured items (e.g., first 3)
   const featuredProperties = properties.slice(0, 3);
@@ -36,10 +40,16 @@ export function FeaturedItems() {
         >
           {featuredProperties.map((property) => (
             <motion.div key={property.id} variants={fadeIn}>
-              <PropertyCard property={property} onClick={() => {}} />
+              <PropertyCard property={property} onClick={setSelectedProperty} />
             </motion.div>
           ))}
         </motion.div>
+        
+        <PropertyModal 
+          property={selectedProperty} 
+          isOpen={!!selectedProperty} 
+          onClose={() => setSelectedProperty(null)} 
+        />
       </div>
     </section>
   );

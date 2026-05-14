@@ -13,7 +13,7 @@ interface PropertyCardProps {
 export function PropertyCard({ property, onClick }: PropertyCardProps) {
   return (
     <Card 
-      className="overflow-hidden cursor-pointer transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl border-none bg-white"
+      className="h-full flex flex-col overflow-hidden cursor-pointer transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl border-none bg-white p-0 gap-0"
       onClick={() => onClick(property)}
       tabIndex={0}
       onKeyDown={(e) => {
@@ -22,7 +22,7 @@ export function PropertyCard({ property, onClick }: PropertyCardProps) {
         }
       }}
     >
-      <div className="relative h-64 w-full">
+      <div className="relative h-64 w-full flex-shrink-0">
         <Image
           src={property.image}
           alt={property.name}
@@ -34,30 +34,30 @@ export function PropertyCard({ property, onClick }: PropertyCardProps) {
           {property.category}
         </div>
       </div>
-      <CardContent className="p-6">
+      <CardContent className="p-6 flex flex-col flex-grow">
         <h3 className="text-xl font-bold text-brand-forest mb-2">{property.name}</h3>
         <p className="text-2xl font-semibold text-brand-forest mb-4">
           ${property.price.toLocaleString()}
         </p>
         <div className="flex items-center text-gray-500 mb-4">
-          <MapPin className="w-4 h-4 mr-2" />
+          <MapPin className="w-4 h-4 mr-2 flex-shrink-0" />
           <span className="text-sm">{property.location}</span>
         </div>
-        <div className="flex items-center justify-between text-gray-500 text-sm border-t border-gray-100 pt-4">
+        <div className="mt-auto flex items-center justify-between text-gray-500 text-sm border-t border-gray-100 pt-4">
           {property.bedrooms && (
             <div className="flex items-center">
-              <Bed className="w-4 h-4 mr-1" />
+              <Bed className="w-4 h-4 mr-1 flex-shrink-0" />
               <span>{property.bedrooms} Beds</span>
             </div>
           )}
           {property.bathrooms && (
             <div className="flex items-center">
-              <Bath className="w-4 h-4 mr-1" />
+              <Bath className="w-4 h-4 mr-1 flex-shrink-0" />
               <span>{property.bathrooms} Baths</span>
             </div>
           )}
           <div className="flex items-center">
-            <Square className="w-4 h-4 mr-1" />
+            <Square className="w-4 h-4 mr-1 flex-shrink-0" />
             <span>{property.squareFeet.toLocaleString()} sqft</span>
           </div>
         </div>

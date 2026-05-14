@@ -37,12 +37,8 @@ export function Footer() {
             </address>
           </div>
         </div>
-        <div className="border-t border-brand-cloud/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-brand-cloud/50">
+        <div className="border-t border-brand-cloud/10 pt-8 flex justify-center text-sm text-brand-cloud/50">
           <p>&copy; {new Date().getFullYear()} AVS RealEstate Agency. All rights reserved.</p>
-          <div className="flex gap-6 mt-4 md:mt-0">
-            <Link href="#" className="hover:text-brand-lime transition-colors">Privacy Policy</Link>
-            <Link href="#" className="hover:text-brand-lime transition-colors">Terms of Service</Link>
-          </div>
         </div>
       </div>
     </footer>
